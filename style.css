@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+:root{
+    --blue1:  #0ce6f2;
+    --blue2: #0098db;
+    --blue3: #1e579c;
+    --white1: #f4e9d4;
+    --black1: #09010d;
+
+    --font-primary:'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color:   #5b4a68;
+    font-family: var(--font-primary);
+}
+
+/* *********** HEADER */
+.cabecalho{
+    text-align: center;
+    font-family: var(--font-primary);
+    margin-bottom: 3em;
+}
+
+.cabecalho_titulo{
+    padding: 1em 0;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.cabecalho_texto{
+    padding: 0.5em ;
+    font-weight: 400;
+}
+
+/* **************** TELA/MAIN */
+
+.tela{
+    margin: auto;
+    width: 55%;
+    background-color: var(--black1);
+    border-radius: 44px;
+    border: 5px solid var(--blue1);
+}
+
+.tela_operacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--blue1);
+    font-size: 100%;
+    height: 50px;
+    margin: 1em auto;
+    border-radius: 24px;
+    border: 2px solid var(--blue1);
+    width: 60%;
+}
+
+.tela_numero_principal{
+    font-size: 120%;
+    letter-spacing: 0.1rem;
+}
+
+.tela_armazem{
+    width: 100%;
+    margin-left:10%;
+    font-size: 80%;
+}
+
+/* ***************** TECLADO/MAIN */
+
+.container_tela{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 15px;
+    margin: auto;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+
+.teclas{
+    height: 45px;
+    width: 45px;
+    color: var(--blue1);
+    background-color: transparent;
+    font-size: 120%;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    border: 3px solid var(--blue1);
+    box-shadow: 1px 1px 1px var(--blue2);
+}
+
+.teclas:hover{
+    border-color: var(--blue2);
+    color: var(--blue2);
+}
+
+.teclas.ativa,
+.teclas:active{
+    border-color: var(--blue3);
+    color: var(--blue3);
+    box-shadow: 0.7px 0.7px var(--blue3) inset;
+}
+
+/* ************** RODAPE */
+.rodape{
+    padding: 1em;
+    text-align: center;
+}
+
+.destaque{
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho{
+    margin-bottom: 0.5em;
+  }
+  .tela{
+    width: 90%;
+  }
+
+  .tela_operacao{
+    width: 90%;
+  }
+
+  .container_tela{
+    width: 90%;
+    gap: 5px;
+    margin-bottom: 0.8em;
+  }
+
+  .teclas{
+    height: 40px;
+    width: 40px;
+    font-size: 80%;
+    border: 2px solid var(--blue1);
+  }
+}
