@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to right, #6c5b7b, #000000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .calculator {
+    max-width: 400px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid transparent;
+    animation: changeBorderColor 5s infinite linear;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @keyframes changeBorderColor {
+    0% {
+      border-color: #ff6f61;
+    }
+    25% {
+      border-color: #67d8ef;
+    }
+    50% {
+      border-color: #ffd700;
+    }
+    75% {
+      border-color: #a460e8;
+    }
+    100% {
+      border-color: #ff6f61;
+    }
+  }
